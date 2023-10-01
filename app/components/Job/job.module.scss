@@ -1,3 +1,5 @@
+@import "../../sass/mixins";
+
 .job {
   background-color: #fff;
   padding: 1.25rem;
@@ -69,9 +71,13 @@
     justify-content: space-between;
 
     .info {
-      display: flex;
+      display: none;
       align-items: center;
       column-gap: 0.5rem;
+
+      @include tablet {
+        display: flex;
+      }
 
       div {
         font-size: 0.9rem;
@@ -83,7 +89,7 @@
 
     a {
       font-size: 0.95rem;
-      padding: 0.5rem .75rem;
+      padding: 0.5rem 0.75rem;
       border-radius: 0.25rem;
       background-color: var(--primary-color);
       color: #fff;

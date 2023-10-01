@@ -8,6 +8,7 @@ import Category from "./components/Category";
 import Startups from "./components/Startups";
 import HowItWorks from "./components/HowItWorks";
 import PopularJobs from "./components/PopularJobs";
+import Explore from "./components/Explore";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       <Startups />
       <HowItWorks />
       <PopularJobs />
+      <Explore />
     </section>
   );
 };
