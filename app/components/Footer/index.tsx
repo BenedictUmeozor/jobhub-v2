@@ -69,7 +69,7 @@ const Footer = () => {
       <Container className={styles.copyright}>
         <p>
           &copy; All rights reserved |{" "}
-          <a href="htps://benedictumeozor.vercel.app" rel="noopener noreferrer">
+          <a href="https://benedictumeozor.vercel.app" rel="noopener noreferrer">
             Benedict
           </a>
         </p>
