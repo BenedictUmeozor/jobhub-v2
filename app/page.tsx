@@ -4,6 +4,10 @@ import image from "./assets/hero.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "react-feather";
+import Category from "./components/Category";
+import Startups from "./components/Startups";
+import HowItWorks from "./components/HowItWorks";
+import PopularJobs from "./components/PopularJobs";
 
 const Home = () => {
   return (
@@ -12,7 +16,7 @@ const Home = () => {
         <div className={styles.left}>
           <div>
             <h2>
-              Find your dream with <Link href="/">Jobhub.</Link>
+              Find your dream job with <Link href="/">Jobhub.</Link>
             </h2>
             <p>
               Get the most exiting jobs from all around the world and grow your
@@ -27,6 +31,10 @@ const Home = () => {
           <Image src={image} height={500} width={500} alt="image" />
         </div>
       </Container>
+      <Category />
+      <Startups />
+      <HowItWorks />
+      <PopularJobs />
     </section>
   );
 };

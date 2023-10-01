@@ -2,6 +2,7 @@
   --body-color: #ffffff;
   --text-color: #151515;
   --primary-color: #0040ff;
+  --paragraph: #777777;
   font-size: 16px;
 }
 
@@ -14,6 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-wrap: break-word;
+  
 }
 
 ::-webkit-scrollbar {
@@ -24,8 +27,6 @@ body {
   line-height: 1.5;
   background-color: var(--body-color);
   color: var(--text-color);
-  height: 100vh;
-  overflow-y: scroll;
 }
 
 a {
@@ -36,7 +37,11 @@ a {
 }
 
 .container {
-  width: 95%;
+  width: 92.5%;
   max-width: 990px;
   margin: auto;
+}
+
+.section {
+  padding: 2.5rem 0;
 }
