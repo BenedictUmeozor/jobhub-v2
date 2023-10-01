@@ -1,0 +1,42 @@
+:root {
+  --body-color: #ffffff;
+  --text-color: #151515;
+  --primary-color: #0040ff;
+  font-size: 16px;
+}
+
+:root.dark {
+  --body-color: #151515;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  line-height: 1.5;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  width: 95%;
+  max-width: 990px;
+  margin: auto;
+}
