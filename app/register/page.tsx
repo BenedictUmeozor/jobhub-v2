@@ -14,6 +14,9 @@ const font = Montserrat({
 const Page = () => {
   return (
     <main className={styles.page}>
+      <Container className={styles.hidden}>
+        <h2>Register</h2>
+      </Container>
       <Container className={styles.container}>
         <div className={styles.left}>
           <Image src={image} alt="register" height={500} width={500} />
@@ -29,9 +32,7 @@ const Page = () => {
               <Image src={google} alt="google" height={30} width={30} />
               Sign up with google
             </button>
-            <div className={styles.or}>
-              OR
-            </div>
+            <div className={styles.or}>OR</div>
             <div className="form-field">
               <label htmlFor="email">Email*</label>
               <input type="email" id="email" placeholder="Enter your email" />

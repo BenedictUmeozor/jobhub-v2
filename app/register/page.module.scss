@@ -72,3 +72,16 @@
     }
   }
 }
+
+.hidden {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @include mobile {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-color);
+  }
+}

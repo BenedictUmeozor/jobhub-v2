@@ -14,6 +14,9 @@ const font = Montserrat({
 const Page = () => {
   return (
     <main className={styles.page}>
+      <Container className={styles.hidden}>
+        <h2>Login</h2>
+      </Container>
       <Container className={styles.container}>
         <div className={styles.left}>
           <Image src={image} alt="register" height={500} width={500} />
