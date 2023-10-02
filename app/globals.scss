@@ -16,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   word-wrap: break-word;
-  
 }
 
 ::-webkit-scrollbar {
@@ -27,6 +26,9 @@ body {
   line-height: 1.5;
   background-color: var(--body-color);
   color: var(--text-color);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 a {
@@ -44,4 +46,75 @@ a {
 
 .section {
   padding: 2.5rem 0;
+}
+
+.loader {
+  height: 100vh;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    appearance: none;
+    height: 45px;
+    border-radius: 0.25rem;
+    border: 1px solid #888;
+    padding: 0 0.5rem;
+
+    &:focus {
+      outline: none;
+      border-color: #0040ff;
+    }
+  }
+}
+
+form {
+  .submit {
+    width: 100%;
+    padding: 0.75rem 0;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    &:hover {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      background-color: transparent;
+    }
+  }
+}
+
+.redirect {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+
+  a {
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
 }

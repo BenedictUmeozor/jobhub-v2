@@ -56,6 +56,7 @@ const child = {
 
 const MobileNav = () => {
   const pathName = usePathname();
+  const isLoggedIn = false;
 
   return (
     <nav className={styles.nav}>
@@ -70,12 +71,22 @@ const MobileNav = () => {
             </Link>
           </motion.li>
         ))}
-        <motion.li variants={child} className={styles.login}>
-          <Link href="/login">Login</Link>
-        </motion.li>
-        <motion.li variants={child} className={styles.register}>
-          <Link href="/register">Register</Link>
-        </motion.li>
+        {isLoggedIn ? (
+          <>
+            <motion.li className={styles.create}>
+              <Link href="/jobs/new">Create job</Link>
+            </motion.li>
+          </>
+        ) : (
+          <>
+            <motion.li variants={child} className={styles.login}>
+              <Link href="/login">Login</Link>
+            </motion.li>
+            <motion.li variants={child} className={styles.register}>
+              <Link href="/register">Register</Link>
+            </motion.li>
+          </>
+        )}
       </motion.ul>
     </nav>
   );

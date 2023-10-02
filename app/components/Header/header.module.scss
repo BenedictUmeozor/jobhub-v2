@@ -51,9 +51,30 @@
 
         &:hover {
           color: var(--primary-color);
+          border-color: var(--primary-color);
           background-color: transparent;
         }
       }
     }
+  }
+}
+
+.link {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 0.15rem solid transparent;
+
+  &:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: transparent;
+  }
+
+  @include mobile {
+    display: none;
   }
 }

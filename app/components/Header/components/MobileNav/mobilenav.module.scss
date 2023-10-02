@@ -21,10 +21,37 @@
     li {
       margin-bottom: 1rem;
       text-align: left;
+      border: 1.5px solid transparent;
+      transition: all 0.3s ease-in-out;
 
       &.register {
         background-color: var(--primary-color);
         border-radius: 0.25rem;
+
+        &:hover {
+          background-color: transparent;
+          border-color: var(--primary-color);
+          a {
+            color: var(--primary-color);
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+      }
+
+      &.create {
+        background-color: var(--primary-color);
+        border-radius: 0.25rem;
+
+        &:hover {
+          background-color: transparent;
+          border-color: var(--primary-color);
+          a {
+            color: var(--primary-color);
+          }
+        }
 
         a {
           color: #fff;
@@ -38,6 +65,10 @@
         text-transform: capitalize;
         font-size: 0.95rem;
         font-weight: 500;
+
+        &:hover {
+          color: var(--primary-color);
+        }
 
         &.active {
           color: var(--primary-color);

@@ -5,6 +5,8 @@ import Navbar from "../Navbar";
 import MenuBtn from "./components/Menu";
 
 const Header = () => {
+  const isLoggedIn = false;
+
   return (
     <header className={styles.header}>
       <Container className={styles.container}>
@@ -12,10 +14,20 @@ const Header = () => {
           <Link href="/">Jobhub.</Link>
         </div>
         <Navbar />
-        <div className={styles.authActions}>
-          <Link href="/login">login</Link>
-          <Link href="/register">register</Link>
-        </div>
+        {isLoggedIn ? (
+          <>
+            <Link href={"/jobs/new"} className={styles.link}>
+              Create job
+            </Link>
+          </>
+        ) : (
+          <>
+            <div className={styles.authActions}>
+              <Link href="/login">login</Link>
+              <Link href="/register">register</Link>
+            </div>
+          </>
+        )}
         <MenuBtn />
       </Container>
     </header>
