@@ -1,14 +1,15 @@
-import Container from "./components/Container";
+
 import styles from "./page.module.scss";
 import image from "./assets/hero.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "react-feather";
-import Category from "./components/Category";
-import Startups from "./components/Startups";
-import HowItWorks from "./components/HowItWorks";
-import PopularJobs from "./components/PopularJobs";
-import Explore from "./components/Explore";
+import Container from "@/components/Container";
+import Category from "@/components/Category";
+import Startups from "@/components/Startups";
+import HowItWorks from "@/components/HowItWorks";
+import PopularJobs from "@/components/PopularJobs";
+import Explore from "@/components/Explore";
 
 const Home = () => {
   return (

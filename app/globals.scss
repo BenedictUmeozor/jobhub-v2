@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 :root {
   --body-color: #ffffff;
   --text-color: #151515;
@@ -59,6 +61,7 @@ a {
 button {
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-field {
@@ -116,5 +119,19 @@ form {
   a {
     text-decoration: underline;
     color: var(--primary-color);
+  }
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  &::placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+textarea {
+  font-family: "Montserrat", sans-serif;
+  &::placeholder {
+    font-family: "Montserrat", sans-serif;
   }
 }

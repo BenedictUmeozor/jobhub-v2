@@ -1,10 +1,10 @@
-import Container from "../components/Container";
 import styles from "./page.module.scss";
 import image from "../assets/signin.svg";
 import Image from "next/image";
 import google from "../assets/google.png";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
+import Container from "@/components/Container";
 
 const font = Montserrat({
   subsets: ["latin"],

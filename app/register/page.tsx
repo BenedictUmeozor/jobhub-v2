@@ -1,10 +1,11 @@
-import Container from "../components/Container";
+import Container from "@/components/Container";
 import styles from "./page.module.scss";
 import image from "../assets/singup.svg";
 import Image from "next/image";
 import google from "../assets/google.png";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
+import { ArrowRight } from "react-feather";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -45,7 +46,9 @@ const Page = () => {
                 placeholder="Create your password"
               />
             </div>
-            <button className="submit">Signup</button>
+            <button className={`submit ${styles.button}`}>
+              Continue <ArrowRight />
+            </button>
           </form>
           <p className="redirect">
             Already have an account? <Link href="/login">Login</Link>

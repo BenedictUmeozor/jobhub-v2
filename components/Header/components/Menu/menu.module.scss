@@ -1,0 +1,15 @@
+@import "../../../../app/sass/mixins";
+
+.menu {
+  display: none;
+
+  @include mobile {
+    display: block;
+    cursor: pointer;
+    z-index: 9;
+
+    svg {
+      width: 3rem;
+    }
+  }
+}
